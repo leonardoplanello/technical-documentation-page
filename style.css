@@ -1,0 +1,106 @@
+/* FILEPATH: /d:/1. Code/technical-documentation-page/style.css */
+
+/* Set up the layout for the page */
+body {
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 1200px) {
+    selector {
+        font-size: 16px;
+    }
+}
+/* Style for the navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f0f0f0;
+    overflow-y: scroll;
+}
+
+/* Style for the header in the navbar */
+#navbar header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+/* Style for the links in the navbar */
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Style for the active link in the navbar */
+.nav-link.active {
+    background-color: #ddd;
+}
+
+/* Style for the main content */
+#main-doc {
+    margin-left: 200px;
+    padding: 1rem;
+}
+
+/* Style for the headers in the main content */
+.main-section header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+/* Style for the paragraphs in the main content */
+.main-section p {
+    margin-top: 1rem;
+}
+
+/* Style for the code blocks in the main content */
+.main-section code {
+    display: block;
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Style for the list items in the main content */
+.main-section li {
+    margin-top: 1rem;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    /* Hide the navbar on smaller devices */
+    #navbar {
+        display: none;
+    }
+    
+    /* Show the navbar when the menu icon is clicked */
+    #menu-icon:checked ~ #navbar {
+        display: block;
+    }
+    
+    /* Style for the menu icon */
+    #menu-icon {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 600px) {
+    /* Add your CSS rules for smaller screens here */
+    #navbar {
+        flex-direction: column;
+    }
+    .nav-link {
+        padding: 10px;
+    }
+}
