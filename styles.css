@@ -12,10 +12,14 @@ body {
   min-width: 290px;
   top: 0px;
   left: 0px;
-  width: 300px;
+  width: 200px;
   height: 100%;
   border-right: solid;
-  border-color: rgba(0, 22, 22, 0.4);
+  border-color: black; 
+}
+
+a{
+  text-decoration: none;
 }
 
 header {
@@ -30,7 +34,8 @@ header {
   text-align: left;
   margin: 0px;
 }
-
+/*The overflow-y: auto; property is used to control what happens when content overflows its container along the y-axis (vertically). The auto value means the browser will automatically provide a scrollbar if the content is taller than the container.
+The overflow-x: hidden; property is used to control what happens when content overflows its container along the x-axis (horizontally). The hidden value means any content that overflows the container horizontally will be hidden from view.*/
 #navbar ul {
   height: 88%;
   padding: 0;
@@ -39,7 +44,7 @@ header {
 }
 
 #navbar li {
-  color: #4d4e53;
+  color: black;
   border-top: 1px solid;
   list-style: none;
   position: relative;
@@ -49,9 +54,8 @@ header {
 #navbar a {
   display: block;
   padding: 10px 30px;
-  color: #4d4e53;
-  text-decoration: none;
-  cursor: pointer;
+  color: black;
+  font-weight: bold;
 }
 
 #main-doc {
@@ -62,7 +66,7 @@ header {
 }
 
 section article {
-  color: #4d4e53;
+  color: #000000;
   margin: 15px;
   font-size: 0.96em;
 }
@@ -89,7 +93,7 @@ section li {
     max-height: 275px;
     border: none;
     z-index: 1;
-    border-bottom: 2px solid;
+    border-bottom: none;
   }
 
   #main-doc {
@@ -103,6 +107,4 @@ section li {
   #main-doc {
     margin-left: -10px;
   }
-
-  
 }
